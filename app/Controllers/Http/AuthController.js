@@ -23,6 +23,10 @@ class AuthController {
     return user;
   }
 
+  /**
+   * Profile
+   * Action for return authenticated user
+   */
   async profile({ auth, response }) {
     try {
       return await auth.getUser();

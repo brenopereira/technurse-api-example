@@ -42,3 +42,12 @@ node ace seed --force
 ```js
 node server.js
 ```
+
+## Routes configured into API
+```js
+/api/auth/login
+/api/auth/register
+/api/auth/nurses
+/api/auth/nurses/:id
+/api/auth/user
+```
