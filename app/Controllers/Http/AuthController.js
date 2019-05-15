@@ -22,6 +22,14 @@ class AuthController {
     const user = await User.create(data);
     return user;
   }
+
+  async profile({ auth, response }) {
+    try {
+      return await auth.getUser();
+    } catch (error) {
+      response.send("You are not logged in");
+    }
+  }
 }
 
 module.exports = AuthController;

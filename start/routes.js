@@ -30,3 +30,5 @@ Route.post("/api/auth/register", "AuthController.store");
 
 Route.get("/api/nurses", "NurseController.index").middleware("auth");
 Route.get("/api/nurses/:id", "NurseController.show").middleware("auth");
+
+Route.get("/api/user", "AuthController.profile").middleware("auth");
