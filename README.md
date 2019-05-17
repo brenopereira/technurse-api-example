@@ -1,4 +1,5 @@
 # Technurse API application
+REST API developed the consume recipients to feed their applications for aptitude tests.
 
 The application has the following packages:.
 
